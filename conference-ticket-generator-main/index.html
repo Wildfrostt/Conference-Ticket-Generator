@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: #fff /* hsl(228, 45%, 44%) */; }
+  </style>
+</head>
+<body>
+ <div class="container">
+   <div class="logo">
+     <img src="assets/images/logo-full.svg" alt="">
+   </div>
+   <!-- Form starts -->
+    <div class="title">
+      <h1>Your Journey to Coding Conf <br> 2025 Starts Here!
+      </h1>
+      <p class="p-subheading"> Secure your spot at next year's biggest coding conference.</p>
+    </div>
+    <div class="container2" >
+     <form action="index2.html" method="GET" >
+        <div><h2>Upload Avatar</h2></div>
+        <fieldset class="avatar-field" id="initial">
+          <img src="assets/images/image-avatar.jpg" class="alt-image">
+          <div>
+            <button class="btn" id="btn-1" onclick="document.getElementById('btn-1').click() ">Remove Image</button>
+            <button class="btn" id="btn-2" onclick="document.getElementById('btn-2').click() ">Change Image</button>
+          </div>
+        </fieldset>
+       
+        <fieldset class="avatar-field input-control" id="alternate">
+           <div class="annoy" onclick="document.getElementById('image').click()">
+             <div class="upload"><img src="assets/images/icon-upload.svg" ></div>
+             <div> <legend>Drag and drop or click to upload</legend></div>
+            </div> 
+           <input type="file" id="image" accept="image/*" hidden  required>
+         </fieldset>
+       <div class="info " id="info-1">
+         <div class="info-image"><img src="assets/images/icon-info.svg" alt=""></div>
+         <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+       </div>
+
+       <div class="info " id="info-2">
+         <div class="info-image stillHere"><img src="assets/images/icon-info.svg" alt=""></div>
+         <p class="stillHere">File too large. Please a photo under 500KB </p>
+       </div>
+
+       <div class="input-2 ">
+         <h2>Full Name</h2>
+         <input class="input-control" type="text" name="name" id="fullName" required>
+       </div>
+       
+       <div class="input-3 ">
+        <h2>Email Address</h2>
+        <input type="text" id="email" placeholder="example@email.com" required>
+        <div id="email-error" style="visibility: hidden; margin-top: 7px; ">
+          <p style="color: rgb(194, 46, 46);">Please enter a valid email address</p>
+        </div>
+      </div>
+      
+
+       <div class="input-4 ">
+         <h2>GitHub Username</h2>
+         <input class="input-control" type="text" name="username" id="githubName" placeholder="@yourusername" required>
+       </div>
+
+       <div>
+         <fieldset class="submit-field"  onclick="document.getElementById('submit-btn').click()">
+          <input type="submit"  id="submit-btn" hidden required>
+          <h2 class="ticket">Generate My Ticket</h2>
+         </fieldset>
+       
+        </div>
+     </form>
+       
+    </div>
+
+  
+   
+   <!-- Form ends -->
+
+   <!-- Generated tickets starts -->
+
+   
+
+   
+
+   
+   
+
+   <!-- Generated tickets ends -->
+  
+   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+   </div>
+  </div>
+  
+
+<script>
+  document.getElementById('submit-btn').addEventListener('click', function () {
+      const emailInput = document.getElementById('email').value;
+      
+      if(emailInput.trim()){ 
+        localStorage.setItem('userEmail', emailInput);
+        window.location.href = 'page2.html';
+      }else{
+        alert('Please enter your email');
+      }
+  });
+
+  document.getElementById('submit-btn').addEventListener('click', function () {
+    const nameInput = document.getElementById('fullName').value;
+
+    if (nameInput.trim()) {
+      localStorage.setItem('userName', nameInput); // Save the name to localStorage
+      window.location.href = 'page2.html'; // Navigate to the second page
+    } else {
+      alert('Please enter your name.');
+    }
+  });
+
+  document.getElementById('submit-btn').addEventListener('click', function () {
+      const githubInput = document.getElementById('githubName').value;
+      
+      if(githubInput.trim()){ 
+        localStorage.setItem('userGitHub', githubInput);
+        window.location.href = 'page2.html';
+      }else{
+        alert('Please enter your Github Username');
+      }
+  });
+
+  
+</script>
+
+  <script src="script.js"></script>
+ 
+</body>
+</html>
