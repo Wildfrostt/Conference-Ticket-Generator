@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding:0;
+    
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Inconsolata-VariableFont';  /* Name of the font */
+    src: url('assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype'); /* Correct URL and format */
+    font-weight: 100 1000;  /* Supports weights from 100 to 1000 */
+    font-style: normal;     /* Regular style */
+}
+
+
+.container{
+    overflow: auto;
+    position: relative;
+    z-index: 1;
+    background-image: 
+    url(assets/images/pattern-circle.svg),
+                     url(assets/images/pattern-squiggly-line-top.svg), 
+                     url(assets/images/pattern-squiggly-line-bottom.svg), 
+                     url(assets/images/pattern-lines.svg),
+                     url(assets/images/background-desktop.png);
+    background-position:top left, top right, bottom left, top, center;
+    background-size: 217px 217px,446px 208px,760px 530px,1459px 1024px, 2880px 2200px;
+    background-attachment: scroll;
+    background-repeat: repeat, no-repeat,no-repeat,no-repeat,no-repeat; 
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+     color: #fff;
+}
+
+.container2ndPage{
+    overflow: auto;
+    position: relative;
+    z-index: 1;
+    background-image:
+                     url(assets/images/pattern-circle.svg),
+                     url(assets/images/pattern-squiggly-line-top.svg), 
+                     url(assets/images/pattern-squiggly-line-bottom.svg), 
+                     url(assets/images/pattern-lines.svg),
+                     
+                     url(assets/images/background-desktop.png)
+                     ;
+    background-position:top left,
+                        top right,
+                        bottom left, 
+                        top, 
+                        
+                        center;
+    background-size: 217px 217px,446px 208px,760px 530px,1459px 1024px,2880px 2200px;
+    background-attachment: scroll;
+    background-repeat: repeat, no-repeat,no-repeat,no-repeat,no-repeat; 
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+     color: #fff;
+}
+.insideTicket{
+    width:600px ;
+    height: 280px;
+    display: grid;
+    justify-self: center ;
+    grid-template-columns: 500px 100px;
+    
+    margin-top: 100px;
+    background-image: url(assets/images/pattern-ticket.svg);
+    background-size: cover;
+    
+    
+}
+
+.logo{
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+.title{
+    text-align: center;
+    margin:45px 0 30px 0;
+}
+h1{
+    font-family: 'Inconsolata-VariableFont';
+    font-weight: 1000; 
+    font-size: 42px;
+    margin-bottom: 15px;
+    }
+.page2H1{
+    font-family: 'Inconsolata-VariableFont';
+    font-weight: 600; 
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.p-subheading{
+    font-family: 'inconsolata-VariableFont';
+    font-weight: 600;
+    word-spacing: 5px;
+    
+
+}
+.p-subheading2{
+    font-family: 'inconsolata-VariableFont';
+    font-weight: 600;
+    font-size: 18px;
+    word-spacing: 8px;
+    
+
+}
+
+.container2{
+    width: 28%;
+    display: flex;
+    justify-self: center;
+    margin: 0 auto;
+}
+@media screen and (max-width: 900px) {
+    .container2{
+        width : 90%;
+    }
+}
+
+form{
+    width: 100%;
+    margin-bottom: 100px;
+}
+h2{
+    font-family: 'inconsolata-VariableFont';
+    font-weight: 600;
+    font-size: 1rem;
+    word-spacing: 6px;
+    margin-bottom: 7px;
+}
+.avatar-field{
+    border-color: grey;
+    border-width: 2px;
+    border-radius: 10px;
+    border-style: dashed;
+    
+    width: 97.5%;
+    height: 90px;
+    padding: 5px;
+    background-color: rgba(128, 126, 126, 0.2);
+    margin: 10px 0;
+    cursor: pointer;
+    
+}
+.upload{
+  background-color: rgba(131, 128, 128, 0.3);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    
+}
+legend{
+    font-family: 'inconsolata-VariableFont';
+    font-size: small;
+    font-weight: 600;
+    color: grey;
+}
+.annoy{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.info{
+    display: flex;
+    position: absolute;
+    margin-bottom: 40px;
+}
+p{
+    font-family: 'inconsolata-VariableFont';
+    font-size: 13px;
+    color: grey;
+}
+.info-image{
+    margin-right: 7px;
+}
+.input-3, .input-4{
+    margin: 30px 0 0 0;
+    width: 100%;
+    
+}
+.input-2{
+    margin: 50px 0 0 0;
+    width: 100%;
+}
+input{
+    width: 92.5%;
+    border-radius: 7px;
+    height: 40px;
+    color: #fff;
+    background-color: rgba(153, 151, 151, 0.2);
+    border-color: rgb(182, 179, 179) ;
+    border-width: 2px ;
+    
+    padding: 0px 15px;
+}
+.submit-field{
+    margin: 30px 0 0 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    border-width: 2px;
+    color: rgb(5, 5, 65);
+    background-color:hsl(7, 71%, 60%);
+    border-color:hsl(7, 71%, 60%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+    
+}
+.ticket{
+    font-size: 'inconsolata-VariableFont';
+    font-weight: 800;
+}
+
+#initial{
+    position: absolute;
+    width: 370px;
+    visibility: hidden;
+    display: grid;
+    place-items: center;
+    
+}
+.alt-image{
+    background-color: rgba(131, 128, 128, 0.3);
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    
+}
+.btn{
+    background-color: rgba(128, 126, 126, 0.2);
+    border-color: rgba(128, 126, 126, 0.1);
+    color: rgb(184, 182, 182);
+    font-family: 'inconsolata-VariableFont';
+    width: 100px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    text-decoration-line: underline;
+    
+}
+#info-2{
+    visibility: hidden;
+    
+}
+.stillHere{
+    color: rgb(134, 32, 32);
+}
+
+.input-control:focus{
+    outline: 1;
+}
+#email{
+    outline: none;
+}
+#email.error{
+    border-color: rgb(194, 46, 46);    
+}
+.outsiders{
+    background: linear-gradient(to right, #ff7e5f, #f0ceb4); /* Gradient colors */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+    word-spacing: 5px;
+}
+.sub1-1{
+    display: grid;
+    grid-template-columns: 60px auto;
+    margin: 30px 0 0 20px; 
+   
+}
+.sub1-2{
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 70px;
+    margin-left: 70px;
+}
+.theBigOneSub-2{
+    margin: 30px 0 0 20px;
+    display: flex;
+    align-items: flex-end;
+    
+  
+}
+#insideTicketName{
+    font-size: 20px;
+    font-family: 'Inconsolata-VariableFont' ;
+    letter-spacing: 1px;
+    margin-left: 13px;
+    margin-bottom: 10px;
+}
+.emailGithub{
+    display: flex;
+    margin-left: 13px;
+    margin-bottom: 15px;
+}
+#insideTicketGitHub{
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-left: 8px;
+    margin-top: 2px;
+}
+.theSmallOne{
+    width: 100px;
+    align-content: center;
+    text-align: center;
+}
+.lastDigits{
+    transform: rotate(270deg);
+    font-size:30px ;
+    color: rgba(146, 145, 145, 0.473) ;    
+}
+@media screen and (max-width: 900px) {
+    .insideTicket {
+        width: 90%; 
+        max-width: 600px; 
+        height: auto; 
+        aspect-ratio: 600 / 280;
+        display: grid;
+        justify-self: center;
+        grid-template-columns: 4fr 1fr; 
+        background-image: url(assets/images/pattern-ticket.svg);
+        background-size: 100% 100%; 
+        background-repeat: no-repeat;
+        background-position: center; 
+        padding: 10px; 
+        box-sizing: border-box; 
+    }
+
+    .theBigOne {
+        height: auto; 
+    }
+
+    /* Adjust child elements to fit within the container */
+    .sub1-1 {
+        display: grid;
+        grid-template-columns: 60px auto; /* Adjust grid layout */
+        margin: 10px 0 0 10px; /* Reduce margin for smaller screens */
+    }
+
+    .sub1-1 h1 {
+        font-size: 24px; /* Reduce font size for smaller screens */
+        font-weight: 600;
+        margin:0; /* Remove default margin */
+    }
+
+    .sub1-2 {
+        font-weight: 700;
+        font-size: 14px; /* Reduce font size for smaller screens */
+        margin-bottom: 20px; /* Reduce margin for smaller screens */
+        margin-left: 60px; /* Reduce margin for smaller screens */
+    }
+
+    .theBigOneSub-2 {
+        margin: 0  px 0 0px 10px; /* Reduce margin for smaller screens */
+        display: flex;
+        align-self: flex-end;
+        align-content: flex-end;
+        
+    }
+
+    #insideTicketName {
+        font-size: 18px; /* Reduce font size for smaller screens */
+        font-family: 'Inconsolata-VariableFont';
+        letter-spacing: 1px;
+        margin-left: 10px; /* Reduce margin for smaller screens */
+        margin-bottom: 10px;
+    }
+
+    .emailGithub {
+        display: flex;
+        margin-left: 10px; /* Reduce margin for smaller screens */
+        margin-bottom: 10px; /* Reduce margin for smaller screens */
+    }
+
+    #insideTicketGitHub {
+        font-weight: 600;
+        font-size: 14px; /* Reduce font size for smaller screens */
+        letter-spacing: 1px;
+        margin-left: 8px;
+        margin-top: 2px;
+    }
+
+    .theSmallOne {
+        width: 80px; /* Reduce width for smaller screens */
+        align-content: center;
+        text-align: center;
+    }
+
+    .lastDigits {
+        transform: rotate(270deg);
+        font-size: 24px; /* Reduce font size for smaller screens */
+        color: rgba(146, 145, 145, 0.473);
+    }
+}
