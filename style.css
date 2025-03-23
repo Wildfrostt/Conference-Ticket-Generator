@@ -125,14 +125,20 @@ h1{
     .container2{
         width : 90%;
     }
-    #initial{
-    position: absolute;
-    width: 350px;
-    visibility: hidden;
-    display: grid;
-    place-items: center;
-    
-        }
+    .avatar-field{
+        border-color: grey;
+        border-width: 2px;
+        border-radius: 10px;
+        border-style: dashed;
+        
+        width: 90%;
+        height: 90px;
+        padding: 5px;
+        background-color: rgba(128, 126, 126, 0.2);
+        margin: 10px 0;
+        cursor: pointer;
+        
+    }
 }
 
 form{
@@ -364,7 +370,7 @@ input{
     .sub1-1 {
         display: grid;
         grid-template-columns: 60px auto; /* Adjust grid layout */
-        margin: 15px 0 0 0; /* Reduce margin for smaller screens */
+        margin: 20px 0 0 0; /* Reduce margin for smaller screens */
     }
 
     .sub1-1 h1 {
@@ -375,13 +381,14 @@ input{
 
     .sub1-2 {
         font-weight: 700;
-        font-size: 14px; /* Reduce font size for smaller screens */
-        margin-bottom: 15px; /* Reduce margin for smaller screens */
+        font-size: 12px; /* Reduce font size for smaller screens */
+        margin-top: 0;
+        margin-bottom: 12px; /* Reduce margin for smaller screens */
         margin-left: 60px; /* Reduce margin for smaller screens */
     }
 
     .theBigOneSub-2 {
-        margin: 0 0 5px 0; /* Reduce margin for smaller screens */
+        margin: 0 0 10px 0; /* Reduce margin for smaller screens */
         display: flex;
         align-self: flex-end;
         align-content: flex-end;
@@ -391,28 +398,28 @@ input{
         width: 50px; 
         height:  50px;
         border-radius: 10px;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
     }
 
     #insideTicketName {
-        font-size: 14px; /* Reduce font size for smaller screens */
+        font-size: 15px; /* Reduce font size for smaller screens */
         font-family: 'Inconsolata-VariableFont';
         letter-spacing: 0px;
         margin-left: 10px; /* Reduce margin for smaller screens */
-        margin-bottom: 8px;
+        margin-bottom: 6px;
     }
 
     .emailGithub {
         display: flex;
         margin-left: 10px; /* Reduce margin for smaller screens */
-        margin-bottom: 10px; /* Reduce margin for smaller screens */
+        margin-bottom: 8px; /* Reduce margin for smaller screens */
     }
 
     #insideTicketGitHub {
         font-weight: 600;
-        font-size: 14px; /* Reduce font size for smaller screens */
+        font-size: 12px; /* Reduce font size for smaller screens */
         letter-spacing: 1px;
-        margin-left: 8px;
+        margin-left: 5px;
         margin-top: 2px;
     }
 
