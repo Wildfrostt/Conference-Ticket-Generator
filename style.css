@@ -339,6 +339,20 @@ input{
         place-items: center;
         
     }
+    .avatar-field{
+        border-color: grey;
+        border-width: 2px;
+        border-radius: 10px;
+        border-style: dashed;
+        
+        width: 90%;
+        height: 90px;
+        padding: 5px;
+        background-color: rgba(128, 126, 126, 0.2);
+        margin: 10px 0;
+        cursor: pointer;
+        
+    }
 }
 @media screen and (max-width: 900px) {
     .insideTicket {
@@ -390,8 +404,8 @@ input{
         
     }
     .avatar{
-        width: 40px; 
-        height:  40px;
+        width: 30px; 
+        height:  30px;
         border-radius: 10px;
         margin-bottom: 8px;
     }
