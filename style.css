@@ -333,7 +333,7 @@ input{
     }
     #initial{
         position: absolute;
-        width: 348px;
+        width: 370px;
         visibility: hidden;
         display: grid;
         place-items: center;
@@ -393,7 +393,7 @@ input{
         width: 20px; 
         height:  20px;
         border-radius: 5px;
-        margin-bottom: 8px;
+        margin-bottom: 15px;
     }
 
     #insideTicketName {
