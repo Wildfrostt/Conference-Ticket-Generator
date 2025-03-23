@@ -125,6 +125,14 @@ h1{
     .container2{
         width : 90%;
     }
+    #initial{
+    position: absolute;
+    width: 350px;
+    visibility: hidden;
+    display: grid;
+    place-items: center;
+    
+        }
 }
 
 form{
