@@ -94,7 +94,7 @@ h1{
     margin-bottom: 15px;
     }
 .page2H1{
-    font-family: 'Inconsolata-VariableFont';
+    font-family: 'Inconsolata-VariableFont';    
     font-weight: 600; 
     font-size: 42px;
     margin-bottom: 15px;
@@ -121,25 +121,7 @@ h1{
     justify-self: center;
     margin: 0 auto;
 }
-@media screen and (max-width: 900px) {
-    .container2{
-        width : 90%;
-    }
-    .avatar-field{
-        border-color: grey;
-        border-width: 2px;
-        border-radius: 10px;
-        border-style: dashed;
-        
-        width: 90%;
-        height: 90px;
-        padding: 5px;
-        background-color: rgba(128, 126, 126, 0.2);
-        margin: 10px 0;
-        cursor: pointer;
-        
-    }
-}
+
 
 form{
     width: 100%;
@@ -346,6 +328,19 @@ input{
     color: rgba(146, 145, 145, 0.473) ;    
 }
 @media screen and (max-width: 900px) {
+    .container2{
+        width : 90%;
+    }
+    #initial{
+        position: absolute;
+        width: 348px;
+        visibility: hidden;
+        display: grid;
+        place-items: center;
+        
+    }
+}
+@media screen and (max-width: 900px) {
     .insideTicket {
         width: 90%; 
         max-width: 600px; 
@@ -369,7 +364,7 @@ input{
     /* Adjust child elements to fit within the container */
     .sub1-1 {
         display: grid;
-        grid-template-columns: 60px auto; /* Adjust grid layout */
+        grid-template-columns: 50px auto; /* Adjust grid layout */
         margin: 20px 0 0 0; /* Reduce margin for smaller screens */
     }
 
@@ -395,8 +390,8 @@ input{
         
     }
     .avatar{
-        width: 50px; 
-        height:  50px;
+        width: 40px; 
+        height:  40px;
         border-radius: 10px;
         margin-bottom: 8px;
     }
